@@ -1,0 +1,47 @@
+var s="audacity";
+s=s[1].toUpperCase()+s,slice(2);
+
+$("#main").append(name); and also prepend
+
+s=s.replace("city",town);
+s.slice(2)
+
+.slice() is another string method, which acts on the string s in this case. .slice(start, [end]) will grab the part of the string from the index of start to the index of end. The fact that [end] shows up in brackets means that it's optional. If it isn't there, then .slice() will select all of the string from start to the very end of the string. s.slice(2) gives us "dacity".
+
+Concatenated together, we get "Udacity"!
+------------
+Check out this comparison of True and False in JavaScript and Python
+
+There are only six falsy values in JavaScript so it is easiest to memorize those:
+
+false
+0 (zero)
+"" (empty string)
+null
+undefined
+NaN
+You can learn more about some of the quirks of truthy and falsy here.
+
+What is NaN? NaN, or Not a Number, is a value that turns up when we ask Javascript to do certain impossible things in arithmetic -- like divide zero by zero.
+
+Try it in the console -- and see if you can find the other two special numeric values, Infinity and -Infinity.
+
+One last note: at 1:25, Cameron mentions that undefined means "that a variable doesn't exist and the interpreter doesn't know what you're referring to." This isn't quite true. If you try to use a var that hasn't been defined, you get a ReferenceError. You will see undefined if you declare a variable but don't assign it any values. Like so:
+
+var a;
+a;
+will result in undefined. But
+
+b;
+will result in a ReferenceError because b hasn't been declared yet.
+--------------
+true= true, non-zero numbers, "String",objects,arrays,functions;
+false=false,0,"",undefined,null,NaN;
+----------
+What the heck is all that green text???
+
+["Euler", 3.14159, {name: "James", job: "Course Developer"}, myFunc]
+It's an example array that demonstrates how you can make a valid array that mixes JavaScript data types.
+
+"Euler" is a string. 3.14159 is a number. {name: "James", job: "Course Developer"} is an object (you'll be learning about those soon). And myFunc is a function (more on functions in the next lesson)!
+-------------------------
